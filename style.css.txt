@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* 🌴 Animated jungle background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ffd6e7, #ffe4ef, #ffcce0, #fff0f5);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* background animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🧊 Glass card */
+.container {
+  text-align: center;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  animation: popIn 1s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* 🎭 characters */
+.characters {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+/* King Julien */
+.king-julien {
+  width: 160px;
+  animation: float1 2.5s ease-in-out infinite;
+}
+
+/* Mort */
+.mort {
+  width: 110px;
+  animation: float2 2s ease-in-out infinite;
+}
+
+/* floating animations */
+@keyframes float1 {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-25px) rotate(3deg); }
+}
+
+@keyframes float2 {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px) rotate(-5deg); }
+}
+
+/* ✨ Title */
+h1 {
+  font-size: 2rem;
+  color: #ff3d68;
+  margin-bottom: 10px;
+}
+
+/* subtitle */
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* YES button */
+#yesBtn {
+  background: linear-gradient(135deg, #00c853, #64dd17);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,200,83,0.3);
+}
+
+#yesBtn:hover {
+  transform: scale(1.1);
+}
+
+/* NO button */
+#noBtn {
+  background: linear-gradient(135deg, #ff1744, #d50000);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+/* success page */
+.celebration-container {
+  text-align: center;
+  padding: 30px;
+  animation: popIn 1s ease;
+}
+
+.happy-julien {
+  width: 200px;
+  animation: float1 2s infinite;
+}
