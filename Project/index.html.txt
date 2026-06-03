@@ -1,0 +1,34 @@
+<div class="container" id="mainPage">
+
+  <div class="characters">
+    <img class="king-julien" src="https://i.postimg.cc/W4sxMCRT/mort.jpg">
+    <img class="mort" src="https://i.postimg.cc/BZhZt5Kj/julian.jpg">
+  </div>
+
+  <h1>I have something VERYYY important to ask Mort:)</h1>
+
+  <p class="subtitle">Mort..... would you like to go out with me???🙏</p>
+
+  <div class="buttons">
+    <button id="yesBtn">YES</button>
+    <button id="noBtn">NO</button>
+  </div>
+</div>
+
+<!-- SUCCESS PAGE (hidden initially) -->
+<div class="celebration-container" id="successPage" style="display:none;">
+
+  <img class="happy-julien" src="https://i.postimg.cc/mZPP72G3/celeb.gif" />
+
+  <h1>Thankssss for making King Julian THE happiesttt🥳</h1>
+
+  <p class="success-message">
+    Shagoofayyyyyyyy
+  </p>
+
+  <div class="share-box">
+    <p>Screenshot this and share, you my cutest thing;), Kahan bhala? look down </p>
+    <h2>090078601....COME ONNNNN YOU KNOW MY NUMBER😎</h2>
+  </div>
+
+</div>
